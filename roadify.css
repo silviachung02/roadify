@@ -1,0 +1,195 @@
+/* 1080x1920
+1280x1024
+1920x1080 */
+
+/* portrait mode */
+html, *, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Heebo', sans-serif;
+  /* overflow: hidden;
+  width: 100%; */
+}
+li {
+  line-height: 1;
+  margin-bottom: 36px;
+}
+h1, h2, div{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.mta-icon{
+  width: 325px;
+}
+.mta-icon.small {
+  width: 53px;
+  height: 53px;
+}
+.ride-icon.small {
+  margin-right: -11px;
+  width: 53px;
+  height: 53px;
+}
+.dark-blue {
+  background-color: #006ced;
+}
+.light-blue {
+  background-color: #2494e0;
+}
+.flex-container {
+  display: flex;
+}
+.margin-right {
+  margin-right: -8px;
+}
+.side-padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.space-between {
+  justify-content: space-between;
+}
+.transit-header {
+  color: #c2dff9;
+  font-size: 63px;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  line-height: 1;
+}
+.transit-box {
+  height: 405px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.transit-details-box {
+  width: 655px;
+}
+.transit-details {
+  position: relative;
+  top: 55px;
+}
+.font-heebo-semi-bold {
+  color: #f7f8f9;
+  font-size: 53px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.pagination {
+  width: 17px;
+  margin: 19px 14px;
+}
+#header-box {
+  border-left: 29px solid #231f20;
+  height: 165px;
+  line-height: .82;
+  margin: 40px 15px;
+}
+#header {
+  font-size: 110px;
+  font-weight: 900;
+  margin-left: 35px;
+}
+#sub-header {
+  line-height: 0;
+  position: relative;
+  top: 30px;
+  left: 5px;
+}
+#pagination-box {
+  height: 55px;
+  text-align: center;
+}
+
+
+.rides-box {
+  height: 1620px;
+  width: 540px;
+}
+.ride-icon {
+  width: 325px;
+  height: 325px;
+  margin-left: 135px;
+}
+
+/* square mode */
+@media only screen and (min-width: 1280px) {
+  li {
+    margin-bottom: 12px;
+  }
+  .mta-icon {
+    width: 207px;
+    height: 207px;
+    margin: auto 0;
+  }
+  .mta-icon.small, .ride-icon.small {
+    width: 58px;
+    height: 58px;
+    transform: rotate(90deg);
+  }
+  .side-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+  .transit-box {
+    height: 257px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .transit-header {
+    font-size: 50px;
+    line-height: .9;
+  }
+  .transit-details {
+    font-size: 40px;
+    top: 27px;
+  }
+  .transit-details-box {
+    width: 580px;
+  }
+  #header-box {
+    transform: rotate(270deg);
+    position: fixed;
+    height: 180px;
+    margin: 0;
+    top: 485px;
+    left: -308px;
+  }
+  #transit-content {
+    width: 925px;
+    margin-left: 355px;
+  }
+  #pagination-box {
+    background-color: transparent;
+    position: fixed;
+    top: 42px;
+    left: 256px;
+    transform: rotate(90deg);
+  }
+}
+
+/* landscape mode */
+@media only screen and (min-width: 1920px) {
+  .transit-box {
+    height: 270px;
+    padding-left: 60px;
+  }
+  .transit-details-box {
+    width: 1190px;
+  }
+  #header-box {
+    top: 545px;
+  }
+  #transit-content {
+    width: 1565px;
+  }
+}
