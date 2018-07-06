@@ -15,7 +15,7 @@ body {
 }
 li {
   line-height: 1;
-  margin-bottom: 36px;
+  margin-bottom: 23px;
 }
 h1, h2, div{
   margin: 0;
@@ -27,29 +27,50 @@ ul {
   padding: 0;
   margin: 0;
 }
-.mta-icon{
-  width: 325px;
-}
-.mta-icon.small {
-  width: 53px;
-  height: 53px;
-}
-.ride-icon.small {
-  margin-right: -11px;
-  width: 53px;
-  height: 53px;
-}
 .dark-blue {
   background-color: #006ced;
-}
-.light-blue {
-  background-color: #2494e0;
 }
 .flex-container {
   display: flex;
 }
+.font-heebo-semi-bold {
+  color: #f7f8f9;
+  font-size: 53px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.light-blue {
+  background-color: #2494e0;
+}
 .margin-right {
   margin-right: -8px;
+}
+.mta-icon {
+  width: 325px;
+}
+.mta-icon.small,.bus-icon.small {
+  width: 53px;
+  height: 53px;
+}
+.pagination {
+  width: 17px;
+  margin: 19px 14px;
+}
+.rides-box {
+  height: 810px;
+}
+.ride-icon {
+  width: 300px;
+  height: 300px;
+}
+.ride-icon.small {
+  margin: 0;
+  margin-right: 2px;
+  width: 53px;
+  height: 53px;
+}
+.space-around {
+  justify-content: space-around;
 }
 .side-padding {
   padding-left: 15px;
@@ -60,32 +81,30 @@ ul {
 }
 .transit-header {
   color: #c2dff9;
-  font-size: 63px;
+  font-size: 55px;
   font-weight: 500;
   letter-spacing: 1.8px;
   line-height: 1;
+  margin-bottom: 12px;
+  /* white-space: normal; */
 }
 .transit-box {
   height: 405px;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 .transit-details-box {
   width: 655px;
 }
-.transit-details {
+/* .transit-details {
   position: relative;
   top: 55px;
+} */
+.vertical-center {
+  margin: auto 0;
 }
-.font-heebo-semi-bold {
-  color: #f7f8f9;
-  font-size: 53px;
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-.pagination {
-  width: 17px;
-  margin: 19px 14px;
+#header {
+  font-size: 100px;
+  font-weight: 900;
+  margin-left: 23px;
 }
 #header-box {
   border-left: 29px solid #231f20;
@@ -93,10 +112,14 @@ ul {
   line-height: .82;
   margin: 40px 15px;
 }
-#header {
-  font-size: 110px;
-  font-weight: 900;
-  margin-left: 35px;
+#pagination-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 55px;
+  text-align: center;
 }
 #sub-header {
   line-height: 0;
@@ -104,92 +127,162 @@ ul {
   top: 30px;
   left: 5px;
 }
-#pagination-box {
-  height: 55px;
-  text-align: center;
+#uber ul, #lyft ul {
+  width: 500px;
 }
 
-
-.rides-box {
-  height: 1620px;
-  width: 540px;
+.bus-box {
+  height: 540px;
 }
-.ride-icon {
+.bus-icon {
   width: 325px;
-  height: 325px;
-  margin-left: 135px;
+  /* fill: red; */
 }
-
+.bus-icon-box {
+  position: relative;
+  text-align: center
+}
+.bus-id {
+  position: absolute;
+  width: inherit;
+  top: 100px;
+  left: 0;
+  right: 0;
+  font-size: 57px;
+  font-weight: 600;
+}
+.double-line {
+  width: 70%;
+  margin: 0;
+}
+.margin-bottom {
+  margin-bottom: 40px;
+}
+#bus-content h2 {
+  margin-bottom: 5px;
+}
+#bus-content ul li {
+  margin-bottom: 0;
+}
 /* square mode */
 @media only screen and (min-width: 1280px) {
+  .bus-id {
+    top: 65px;
+    font-size: 38px;
+  }
+  .bus-box {
+    height: 341.33px;
+  }
+  .margin-bottom {
+    margin-bottom: 10px;
+  }
+  .font-heebo-semi-bold {
+    font-size: 38px;
+  }
+
+
   li {
     margin-bottom: 12px;
   }
-  .mta-icon {
+
+  .mta-icon, .bus-icon {
     width: 207px;
     height: 207px;
-    margin: auto 0;
   }
-  .mta-icon.small, .ride-icon.small {
+  /* .mta-icon.small, .ride-icon.small {
     width: 58px;
     height: 58px;
     transform: rotate(90deg);
+  } */
+  .mta-icon.small, .ride-icon.small {
+    width: 38px;
+    height: 38px;
+    transform: rotate(90deg);
+  }
+  .rides-box {
+    height: 512px;
+  }
+  .ride-icon {
+    width: 200px;
+    height: 200px;
   }
   .side-padding {
     padding-left: 30px;
     padding-right: 30px;
-
   }
   .transit-box {
-    height: 257px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    height: 256px;
   }
   .transit-header {
-    font-size: 50px;
+    font-size: 42px;
     line-height: .9;
   }
-  .transit-details {
-    font-size: 40px;
-    top: 27px;
-  }
-  .transit-details-box {
-    width: 580px;
-  }
-  #header-box {
+
+  /* #header-box {
     transform: rotate(270deg);
     position: fixed;
     height: 180px;
     margin: 0;
     top: 485px;
     left: -308px;
-  }
-  #transit-content {
-    width: 925px;
-    margin-left: 355px;
+  } */
+  #header-box {
+    transform: rotate(270deg);
+    position: fixed;
+    font-size: 100px;
+    height: 151px;
+    margin: 0;
+    bottom: 328px;
+    left: -289px;
   }
   #pagination-box {
     background-color: transparent;
-    position: fixed;
-    top: 42px;
-    left: 256px;
+    margin: 0;
+    top: 52px;
+    left: -860px;
     transform: rotate(90deg);
+  }
+  /* #transit-content {
+    width: 925px;
+    margin-left: 355px;
+  } */
+  #transit-content {
+    margin-left: 242px;
+  }
+  #uber ul, #lyft ul {
+    width: 450px;
   }
 }
 
 /* landscape mode */
 @media only screen and (min-width: 1920px) {
-  .transit-box {
-    height: 270px;
+  .mta-icon, .bus-icon {
+    width: 230px;
+    height: 230px;
+  }
+  .bus-box {
+    height: 360px;
+  }
+  .margin-bottom {
+    margin-bottom: 35px;
+  }
+  .rides-box {
+    height: 540px;
+    /* width: 1565px; */
+  }
+  .side-padding {
     padding-left: 60px;
   }
+  .transit-box {
+    height: 270px;
+  }
   .transit-details-box {
-    width: 1190px;
+    width: 1250px;
   }
-  #header-box {
-    top: 545px;
+  #uber ul, #lyft ul {
+    width: 950px;
   }
-  #transit-content {
-    width: 1565px;
+  #pagination-box {
+    left: -1504px;
   }
 }

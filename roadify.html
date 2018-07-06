@@ -23,9 +23,9 @@
   </div>
   <div id="transit-content">
     <div class="transit-box flex-container space-between dark-blue side-padding">
-      <img src="icons/r.svg" alt="r line" class="mta-icon">
-      <div class="transit-details-box">
-        <h2 class="transit-header">Atlantic Av-<br>Barclay Center</h2>
+      <img src="icons/r.svg" alt="r line" class="mta-icon vertical-center">
+      <div class="transit-details-box vertical-center">
+        <h2 class="transit-header">Atlantic Av-Barclay Center</h2>
         <ul class="transit-details font-heebo-semi-bold">
           <li class="flex-container space-between"><span>Uptown/Bronx</span><span>10 min</span></li>
           <li class="flex-container space-between"><span>Downtown/Bklyn</span><span>2 min</span></li>
@@ -33,9 +33,9 @@
       </div>
     </div>
     <div class="transit-box flex-container space-between light-blue side-padding">
-      <img src="icons/m.svg" alt="m line" class="mta-icon">
-      <div class="transit-details-box">
-        <h2 class="transit-header">42 St-<br>Bryant Park</h2>
+      <img src="icons/m.svg" alt="m line" class="mta-icon vertical-center">
+      <div class="transit-details-box vertical-center">
+        <h2 class="transit-header">42 St-Bryant Park</h2>
         <ul class="transit-details font-heebo-semi-bold">
           <li class="flex-container space-between"><span>Uptown/Bronx</span><span>10 min</span></li>
           <li class="flex-container space-between"><span>Downtown/Mhttn</span><span>2 min</span></li>
@@ -43,9 +43,9 @@
       </div>
     </div>
     <div class="transit-box flex-container space-between dark-blue side-padding">
-      <img src="icons/7.svg" alt="7 line" class="mta-icon">
-      <div class="transit-details-box">
-        <h2 class="transit-header">Vernon Blvd-<br>Jackson Av</h2>
+      <img src="icons/7.svg" alt="7 line" class="mta-icon vertical-center">
+      <div class="transit-details-box vertical-center">
+        <h2 class="transit-header">Vernon Blvd-Jackson Av</h2>
         <ul class="transit-details font-heebo-semi-bold">
           <li class="flex-container space-between"><span>Uptown/Queens</span><span>10 min</span></li>
           <li class="flex-container space-between"><span>Downtown/Bklyn</span><span>2 min</span></li>
@@ -53,19 +53,19 @@
       </div>
     </div>
     <div class="transit-box flex-container space-between light-blue side-padding">
-      <img src="icons/a.svg" alt="a line" class="mta-icon">
-      <div class="transit-details-box">
-        <hw class="transit-header">42 St-<br>Port Auth Bus Term</h2>
+      <img src="icons/a.svg" alt="a line" class="mta-icon vertical-center">
+      <div class="transit-details-box vertical-center">
+        <h2 class="transit-header">42 St-Port Authority Bus Terminal</h2>
         <ul class="transit-details font-heebo-semi-bold">
           <li class="flex-container space-between"><span>Uptown/Bronx</span><span>10 min</span></li>
           <li class="flex-container space-between"><span>Downtown/Bklyn</span><span>2 min</span></li>
         </ul>
       </div>
     </div>
-    <div class="rides-content flex-container">
-      <div id="uber" class="rides-box side-padding dark-blue">
-        <img src="icons/uber.png" alt="uber icon" class="ride-icon">
-        <ul class="rides-details font-heebo-semi-bold">
+    <div id="rides-content">
+      <div id="uber" class="rides-box side-padding dark-blue flex-container space-around">
+        <img src="icons/uber.png" alt="uber icon" class="ride-icon vertical-center">
+        <ul class="rides-details font-heebo-semi-bold vertical-center">
           <li class="flex-container space-between"><span>Pool</span><span>8 min</span></li>
           <li class="flex-container space-between"><span>Uber X</span><span>1 min</span></li>
           <li class="flex-container space-between"><span>Uber XL</span><span>4 min</span></li>
@@ -73,9 +73,9 @@
           <li class="flex-container space-between"><span>Black</span><span>4 min</span></li>
         </ul>
       </div>
-      <div id="lyft" class="rides-box side-padding light-blue">
-        <img src="icons/lyft.png" alt="lyft icon" class="ride-icon">
-        <ul class="font-heebo-semi-bold">
+      <div id="lyft" class="rides-box side-padding light-blue flex-container space-around">
+        <img src="icons/lyft.png" alt="lyft icon" class="ride-icon vertical-center">
+        <ul class="font-heebo-semi-bold vertical-center">
           <li class="flex-container space-between"><span>Line</span><span>3 min</span></li>
           <li class="flex-container space-between"><span>Lyft</span><span>4 min</span></li>
           <li class="flex-container space-between"><span>Plus</span><span>2 min</span></li>
@@ -83,7 +83,62 @@
           <li class="flex-container space-between"><span>Lux</span><span>7 min</span></li>
         </ul>
       </div>
-
+    </div>
+    <div id="bus-content">
+      <div class="bus-box flex-container space-between dark-blue side-padding">
+        <div class="bus-icon-box vertical-center">
+          <img class="bus-icon" src="icons/bus-icon.svg">
+          <span class="bus-id">B125</span>
+        </div>
+        <div class="transit-details-box vertical-center">
+          <h2 class="transit-header">Fulton St/Carlton Av</h2>
+          <ul class="font-heebo-semi-bold flex-container space-between margin-bottom">
+            <li class="double-line">Broaday Jct Pl/Park Pl</li>
+            <li>5 min</li>
+          </ul>
+          <h2 class="transit-header">Fulton St/S Elliot Pl</h2>
+          <ul class="font-heebo-semi-bold flex-container space-between">
+            <li>Downtown</li>
+            <li>10 min</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bus-box flex-container space-between light-blue side-padding">
+        <div class="bus-icon-box vertical-center">
+          <img class="bus-icon" src="icons/bus-icon.svg">
+          <span class="bus-id">M05</span>
+        </div>
+        <div class="transit-details-box vertical-center">
+          <h2 class="transit-header">Thomson Av/30 Pl</h2>
+          <ul class="font-heebo-semi-bold flex-container space-between margin-bottom">
+            <li>Someplace Far</li>
+            <li>10 min</li>
+          </ul>
+          <h2 class="transit-header">Jackson Av/28 Pl</h2>
+          <ul class="font-heebo-semi-bold flex-container space-between">
+            <li class="double-line">Something Somewhere</li>
+            <li>21 min</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bus-box flex-container space-between dark-blue side-padding">
+        <div class="bus-icon-box vertical-center">
+          <img class="bus-icon" src="icons/bus-icon.svg">
+          <span class="bus-id">M35</span>
+        </div>
+        <div class="transit-details-box vertical-center">
+          <h2 class="transit-header">Queens Blvd/Queens Pl E</h2>
+          <ul class="font-heebo-semi-bold flex-container space-between margin-bottom">
+            <li>Someplace Far</li>
+            <li>10 min</li>
+          </ul>
+          <h2 class="transit-header">Jackson Av/Thomson Av</h2>
+          <ul class="font-heebo-semi-bold flex-container space-between">
+            <li class="double-line">Something Somewhere</li>
+            <li>21 min</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div id="pagination-box" class="dark-blue">
       <img src="icons/circle.svg" alt="page indicator circle" class="pagination">
