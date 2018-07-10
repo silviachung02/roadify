@@ -51,16 +51,6 @@ ul {
   width: 17px;
   margin: 19px 14px;
 }
-.rides-box {
-  height: 540px;
-}
-.ride-icon {
-  display: block;
-  height: 300px;
-}
-/* h6 {
-  display: inline-block;
-} */
 .small-bus-icon {
   height: 53px;
   background-color: orange;
@@ -74,10 +64,6 @@ ul {
   font-size: 40px;
   font-weight: 600;
   color: black;
-}
-.ride-icon.small {
-  width: 53px;
-  height: 53px;
 }
 .space-around {
   justify-content: space-around;
@@ -164,13 +150,14 @@ ul {
 .transit-details li {
   margin-bottom: 12px;
 }
-.med-box {
-  width: 660px;
-}
+
 
 
 /* square mode */
 @media only screen and (min-width: 1280px) {
+  li {
+    margin-bottom: 12px;
+  }
   .small-bus-id {
     font-size: 27px;
     top: 22px;
@@ -178,23 +165,6 @@ ul {
   .small-bus-icon {
     height: 40px;
   }
-  /* .small-bus-id {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    font-size: 27px;
-    top: 0px;
-    letter-spacing: -17px;
-  }
-  .small-bus-icon {
-    position: relative;
-    top: -32px;
-    height: 101px;
-    width: 38px;
-    transform: rotate(90deg);
-    margin-left: 32px;
-    margin-right: 44px;
-
-  } */
   .bus-id {
     top: 67px;
     font-size: 42px;
@@ -205,12 +175,8 @@ ul {
   .font-heebo-semi-bold {
     font-size: 40px;
   }
-
   .transit-details-box {
     width: 725px;
-  }
-  li {
-    margin-bottom: 12px;
   }
   .mta-icon, .bus-icon {
     width: 225px;
@@ -236,6 +202,12 @@ ul {
     font-size: 46px;
     line-height: .9;
   }
+  .margin-bottom {
+      margin-bottom: 16px;
+  }
+  .med-box {
+    width: 725px;
+  }
   #header-box {
     transform: rotate(270deg);
     position: fixed;
@@ -254,13 +226,6 @@ ul {
   }
   #transit-content {
     margin-left: 195px;
-  }
-  .margin-bottom {
-      margin-bottom: 16px;
-  }
-
-  .med-box {
-    width: 725px;
   }
 }
 
@@ -301,10 +266,10 @@ ul {
   .med-box {
     width: 1320px;
   }
-  #pagination-box {
-    left: -1586px;
-  }
   .margin-bottom {
     margin-bottom: 15px;
+  }
+  #pagination-box {
+    left: -1586px;
   }
 }
