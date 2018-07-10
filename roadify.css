@@ -1,9 +1,3 @@
-/* 1080x1920
-1280x1024
-1920x1080 */
-
-/* portrait mode */
-
 html, *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -16,7 +10,6 @@ body {
 }
 li {
   line-height: 1;
-  margin-bottom: 23px;
 }
 h1, h2, div{
   margin: 0;
@@ -44,12 +37,13 @@ ul {
   background-color: #2494e0;
 }
 .margin-right {
-  margin-right: -8px;
+  margin-right: 12px;
 }
 .mta-icon {
   height: 325px;
 }
-.mta-icon.small,.bus-icon.small {
+.mta-icon.small {
+  display: block;
   width: 53px;
   height: 53px;
 }
@@ -61,11 +55,27 @@ ul {
   height: 540px;
 }
 .ride-icon {
+  display: block;
   height: 300px;
 }
+/* h6 {
+  display: inline-block;
+} */
+.small-bus-icon {
+  height: 53px;
+  background-color: orange;
+}
+.small-bus-id {
+  display: block;
+  position: relative;
+  top: 28px;
+  padding: 0 8px;
+  margin: auto;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+}
 .ride-icon.small {
-  margin: 0;
-  margin-right: 2px;
   width: 53px;
   height: 53px;
 }
@@ -81,12 +91,12 @@ ul {
 }
 .transit-header {
   color: #c2dff9;
-  font-size: 55px;
+  /* font-size: 55px; */
+  font-size: 68px;
   font-weight: 500;
   letter-spacing: 1.8px;
   line-height: 1;
   margin-bottom: 12px;
-  /* white-space: normal; */
 }
 .transit-box {
   height: 405px;
@@ -94,10 +104,6 @@ ul {
 .transit-details-box {
   width: 660px;
 }
-/* .transit-details {
-  position: relative;
-  top: 55px;
-} */
 .vertical-center {
   margin: auto 0;
 }
@@ -124,7 +130,7 @@ ul {
 #sub-header {
   line-height: 0;
   position: relative;
-  top: 30px;
+  top: 26px;
   left: 5px;
 }
 .bus-box {
@@ -132,7 +138,6 @@ ul {
 }
 .bus-icon {
   width: 325px;
-  /* fill: red; */
 }
 .bus-icon-box {
   position: relative;
@@ -155,10 +160,10 @@ ul {
 .margin-bottom {
   margin-bottom: 40px;
 }
-#bus-content ul li {
-  margin-bottom: 0;
-}
 
+.transit-details li {
+  margin-bottom: 12px;
+}
 .med-box {
   width: 660px;
 }
@@ -166,37 +171,55 @@ ul {
 
 /* square mode */
 @media only screen and (min-width: 1280px) {
+  .small-bus-id {
+    font-size: 27px;
+    top: 22px;
+  }
+  .small-bus-icon {
+    height: 40px;
+  }
+  /* .small-bus-id {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 27px;
+    top: 0px;
+    letter-spacing: -17px;
+  }
+  .small-bus-icon {
+    position: relative;
+    top: -32px;
+    height: 101px;
+    width: 38px;
+    transform: rotate(90deg);
+    margin-left: 32px;
+    margin-right: 44px;
+
+  } */
   .bus-id {
-    top: 60px;
-    font-size: 38px;
+    top: 67px;
+    font-size: 42px;
   }
   .bus-box, .rides-box {
     height: 341.33px;
   }
-  .margin-bottom {
-    margin-bottom: 25px;
-  }
   .font-heebo-semi-bold {
-    font-size: 35px;
+    font-size: 40px;
   }
 
   .transit-details-box {
     width: 725px;
   }
-
-
   li {
     margin-bottom: 12px;
   }
-
   .mta-icon, .bus-icon {
-    width: 207px;
-    height: 207px;
+    width: 225px;
+    height: 225px;
   }
   .mta-icon.small, .ride-icon.small {
     width: 38px;
     height: 38px;
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
   }
   .ride-icon {
     width: 200px;
@@ -210,7 +233,7 @@ ul {
     height: 256px;
   }
   .transit-header {
-    font-size: 42px;
+    font-size: 46px;
     line-height: .9;
   }
   #header-box {
@@ -232,7 +255,9 @@ ul {
   #transit-content {
     margin-left: 195px;
   }
-
+  .margin-bottom {
+      margin-bottom: 16px;
+  }
 
   .med-box {
     width: 725px;
@@ -241,18 +266,28 @@ ul {
 
 /* landscape mode */
 @media only screen and (min-width: 1920px) {
+
+  .transit-header {
+    font-size: 55px;
+    /* font-size: 82px; */
+    line-height: .9;
+  }
+  .font-heebo-semi-bold {
+    font-size: 45px;
+    /* font-size: 48px; */
+  }
   .bus-id {
-    top: 72px;
+    top: 75px;
   }
   .mta-icon, .bus-icon {
-    width: 230px;
-    height: 230px;
+    width: 242px;
+    height: 242px;
   }
   .bus-box, .rides-box{
     height: 360px;
   }
   .margin-bottom {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
   }
   .side-padding {
     padding-left: 60px;
@@ -268,5 +303,8 @@ ul {
   }
   #pagination-box {
     left: -1586px;
+  }
+  .margin-bottom {
+    margin-bottom: 15px;
   }
 }
