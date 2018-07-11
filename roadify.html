@@ -5,6 +5,7 @@
 <title>Nearby Transits by Roadify</title>
 <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700,800,900" rel="stylesheet">
 <link rel="stylesheet" href="roadify.css">
+<script src="roadify.js"></script>
 </head>
 
 <body>
@@ -21,8 +22,8 @@
     </div>
   </div>
   <div id="transit-content" class="pages-container">
-    <div class="page">
-      <div class="transit-box flex-container space-between dark-blue side-padding page">
+    <div class="page fade">
+      <div class="transit-box flex-container space-between dark-blue side-padding">
         <img src="icons/r.svg" alt="r line" class="mta-icon vertical-center">
         <div class="transit-details-box vertical-center">
           <h2 class="transit-header">Atlantic Av-Barclay Center</h2>
@@ -63,7 +64,7 @@
         </div>
       </div>
     </div>
-    <div id="bus-content" class="page">
+    <div id="bus-content" class="page fade">
       <div class="bus-box flex-container space-between dark-blue side-padding">
         <div class="bus-icon-box vertical-center">
           <svg class="bus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.8 200"><title>bus-icon</title><ellipse cx="99.9" cy="100" rx="99.9" ry="100" style="fill:orange"/><path d="M135.65,26.5H64.25A24.54,24.54,0,0,0,39.75,51v92.1a9.82,9.82,0,0,0,9.8,9.8h3.3a6.28,6.28,0,0,0-.3,1.9v11.4a7.34,7.34,0,0,0,7.3,7.3H64a7.34,7.34,0,0,0,7.3-7.3V154.8a6.28,6.28,0,0,0-.3-1.9h57.1a6.28,6.28,0,0,0-.3,1.9v11.4a7.34,7.34,0,0,0,7.3,7.3h4.1a7.34,7.34,0,0,0,7.3-7.3V154.8a6.28,6.28,0,0,0-.3-1.9h4.1a9.82,9.82,0,0,0,9.8-9.8v-92A24.6,24.6,0,0,0,135.65,26.5Zm-57.3,9.4h39.2v9.6H78.35Zm-15,108.2a10.5,10.5,0,1,1,10.5-10.5,10.5,10.5,0,0,1-10.5,10.5Zm72.8,0a10.5,10.5,0,1,1,10.5-10.5h0a10.5,10.5,0,0,1-10.5,10.5Zm10.7-29.7h-94V55.8h94Z" style="fill:#ffffff"/></svg>
@@ -95,7 +96,7 @@
           </ul>
           <h2 class="transit-header">Jackson Av/28 Pl</h2>
           <ul class="font-heebo-semi-bold flex-container space-between">
-            <li class="double-line">Something Somewhere</li>
+            <li class="double-line">Name of Direction</li>
             <li>21 min</li>
           </ul>
         </div>
@@ -108,22 +109,21 @@
         <div class="transit-details-box vertical-center">
           <h2 class="transit-header">Thomson Av/30 Pl</h2>
           <ul class="font-heebo-semi-bold flex-container space-between margin-bottom">
-            <li>Someplace Far</li>
+            <li>Name of Direction</li>
             <li>10 min</li>
           </ul>
           <h2 class="transit-header">Jackson Av/28 Pl</h2>
           <ul class="font-heebo-semi-bold flex-container space-between">
-            <li class="double-line">Something Somewhere</li>
+            <li class="double-line">Name of Direction</li>
             <li>21 min</li>
           </ul>
         </div>
       </div>
     </div>
-    <div id="pagination-box" class="dark-blue">
-      <img src="icons/circle.svg" alt="page indicator circle" class="pagination">
-      <img src="icons/circle.svg" alt="page indicator circle" class="pagination">
-      <img src="icons/circle.svg" alt="page indicator circle" class="pagination">
-    </div>
+  </div>
+  <div id="pagination-box" class="dark-blue">
+    <span class="dot"></span>
+    <span class="dot"></span>
   </div>
 </body>
 </html>

@@ -5,13 +5,12 @@ body {
   height: 100%;
   margin: 0;
   font-family: 'Heebo', sans-serif;
-  /* overflow: hidden;
-  width: 100%; */
+  overflow: hidden;
 }
 li {
   line-height: 1;
 }
-h1, h2, div{
+h1, h2, div {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,104 +19,6 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-.dark-blue {
-  background-color: #006ced;
-}
-.flex-container {
-  display: flex;
-}
-.font-heebo-semi-bold {
-  color: #f7f8f9;
-  font-size: 53px;
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-.light-blue {
-  background-color: #2494e0;
-}
-.margin-right {
-  margin-right: 12px;
-}
-.mta-icon {
-  height: 325px;
-}
-.mta-icon.small {
-  display: block;
-  width: 53px;
-  height: 53px;
-}
-.pagination {
-  width: 17px;
-  margin: 19px 14px;
-}
-.small-bus-icon {
-  height: 53px;
-  background-color: orange;
-}
-.small-bus-id {
-  display: block;
-  position: relative;
-  top: 28px;
-  padding: 0 8px;
-  margin: auto;
-  font-size: 40px;
-  font-weight: 600;
-  color: black;
-}
-.space-around {
-  justify-content: space-around;
-}
-.side-padding {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.space-between {
-  justify-content: space-between;
-}
-.transit-header {
-  color: #c2dff9;
-  /* font-size: 55px; */
-  font-size: 68px;
-  font-weight: 500;
-  letter-spacing: 1.8px;
-  line-height: 1;
-  margin-bottom: 12px;
-}
-.transit-box {
-  height: 405px;
-}
-.transit-details-box {
-  width: 660px;
-}
-.vertical-center {
-  margin: auto 0;
-}
-#header {
-  font-size: 100px;
-  font-weight: 900;
-  margin-left: 23px;
-}
-#header-box {
-  border-left: 29px solid #231f20;
-  height: 165px;
-  line-height: .82;
-  margin: 40px 30px;
-}
-#pagination-box {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 55px;
-  text-align: center;
-}
-#sub-header {
-  line-height: 0;
-  position: relative;
-  top: 26px;
-  left: 5px;
 }
 .bus-box {
   height: 540px;
@@ -139,31 +40,140 @@ ul {
   font-weight: 500;
   color: #ffffff;
 }
+.dot {
+  height: 22px;
+  width: 22px;
+  margin: 15px 8px;
+  background-color: #3ba6fb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot.active {
+  background-color: #f4f9fd;
+}
+.dark-blue {
+  background-color: #006ced;
+}
 .double-line {
   width: 70%;
   margin: 0;
 }
+.flex-container {
+  display: flex;
+}
+.font-heebo-semi-bold {
+  color: #f7f8f9;
+  font-size: 53px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.light-blue {
+  background-color: #2494e0;
+}
 .margin-bottom {
   margin-bottom: 40px;
 }
-
+.margin-right {
+  margin-right: 12px;
+}
+.mta-icon {
+  height: 325px;
+}
+.mta-icon.small {
+  display: block;
+  width: 53px;
+  height: 53px;
+}
+.pages-container {
+  position: relative;
+  height: 1620px;
+}
+.page {
+  position: absolute;
+  width: 100%;
+}
+.small-bus-icon {
+  height: 53px;
+  border-radius: 2px;
+  background-color: orange;
+}
+.small-bus-id {
+  display: block;
+  position: relative;
+  top: 28px;
+  padding: 0 8px;
+  margin: auto;
+  font-size: 38px;
+  font-weight: 600;
+  color: black;
+}
+.space-around {
+  justify-content: space-around;
+}
+.side-padding {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.space-between {
+  justify-content: space-between;
+}
 .transit-details li {
   margin-bottom: 12px;
 }
+.transit-header {
+  color: #c2dff9;
+  font-size: 65px;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.transit-box {
+  height: 405px;
+}
+.transit-details-box {
+  width: 645px;
+}
+.vertical-center {
+  margin: auto 0;
+}
+#header {
+  font-size: 100px;
+  font-weight: 900;
+  margin-left: 19px;
+}
+#header-box {
+  border-left: 29px solid #231f20;
+  height: 165px;
+  line-height: .82;
+  margin: 40px 23px;
+}
+#pagination-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 55px;
+  text-align: center;
+}
+#sub-header {
+  line-height: 0;
+  position: relative;
+  top: 26px;
+  left: 5px;
+}
 
-
+@keyframes fade {
+  from { opacity: .5 }
+  to { opacity: 1 }
+}
 
 /* square mode */
 @media only screen and (min-width: 1280px) {
   li {
     margin-bottom: 12px;
-  }
-  .small-bus-id {
-    font-size: 27px;
-    top: 22px;
-  }
-  .small-bus-icon {
-    height: 40px;
   }
   .bus-id {
     top: 67px;
@@ -171,6 +181,15 @@ ul {
   }
   .bus-box, .rides-box {
     height: 341.33px;
+  }
+  .dot {
+    height: 18px;
+    width: 18px;
+    margin: 18px 8px;
+    background-color: #dad9d9;
+  }
+  .dot.active {
+    background-color: #3c3a3a;
   }
   .font-heebo-semi-bold {
     font-size: 40px;
@@ -182,18 +201,24 @@ ul {
     width: 225px;
     height: 225px;
   }
-  .mta-icon.small, .ride-icon.small {
+  .mta-icon.small {
     width: 38px;
     height: 38px;
-    /* transform: rotate(90deg); */
   }
   .ride-icon {
     width: 200px;
     height: 200px;
   }
+  .small-bus-id {
+    font-size: 27px;
+    top: 22px;
+  }
+  .small-bus-icon {
+    height: 40px;
+  }
   .side-padding {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
   .transit-box {
     height: 256px;
@@ -220,7 +245,7 @@ ul {
   #pagination-box {
     background-color: transparent;
     margin: 0;
-    top: 52px;
+    top: 22px;
     left: -944px;
     transform: rotate(90deg);
   }
@@ -231,28 +256,27 @@ ul {
 
 /* landscape mode */
 @media only screen and (min-width: 1920px) {
-
-  .transit-header {
-    font-size: 55px;
-    /* font-size: 82px; */
-    line-height: .9;
-  }
-  .font-heebo-semi-bold {
-    font-size: 45px;
-    /* font-size: 48px; */
-  }
   .bus-id {
     top: 75px;
-  }
-  .mta-icon, .bus-icon {
-    width: 242px;
-    height: 242px;
   }
   .bus-box, .rides-box{
     height: 360px;
   }
+  .font-heebo-semi-bold {
+    font-size: 45px;
+  }
+  .bus-icon, .mta-icon {
+    width: 242px;
+    height: 242px;
+  }
   .margin-bottom {
     margin-bottom: 32px;
+  }
+  .margin-bottom {
+    margin-bottom: 15px;
+  }
+  .med-box {
+    width: 1320px;
   }
   .side-padding {
     padding-left: 60px;
@@ -260,16 +284,14 @@ ul {
   .transit-box {
     height: 270px;
   }
+  .transit-header {
+    font-size: 55px;
+    line-height: .9;
+  }
   .transit-details-box {
     width: 1320px;
   }
-  .med-box {
-    width: 1320px;
-  }
-  .margin-bottom {
-    margin-bottom: 15px;
-  }
   #pagination-box {
-    left: -1586px;
+    left:-1588px;
   }
 }
