@@ -21,7 +21,7 @@ ul {
   margin: 0;
 }
 .bus-box {
-  height: 540px;
+  height: 547px;
 }
 .bus-icon {
   width: 325px;
@@ -87,7 +87,7 @@ ul {
 }
 .pages-container {
   position: relative;
-  height: 1620px;
+  height: 1639px;
 }
 .page {
   position: absolute;
@@ -130,7 +130,7 @@ ul {
   margin-bottom: 12px;
 }
 .transit-box {
-  height: 405px;
+  height: 410px;
 }
 .transit-details-box {
   width: 645px;
@@ -144,10 +144,10 @@ ul {
   margin-left: 19px;
 }
 #header-box {
-  border-left: 29px solid #231f20;
+  border-left: 22px solid #231f20;
   height: 165px;
   line-height: .82;
-  margin: 40px 23px;
+  margin: 35px 0;
 }
 #pagination-box {
   position: fixed;
@@ -239,7 +239,7 @@ ul {
     font-size: 100px;
     height: 151px;
     margin: 0;
-    bottom: 328px;
+    bottom: 307px;
     left: -289px;
   }
   #pagination-box {
